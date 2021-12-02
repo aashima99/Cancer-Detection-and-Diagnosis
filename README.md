@@ -8,11 +8,10 @@ A  website for early cancer detection and diagnosis using machine learning and d
 4. [**IMPLEMENTATION AND BASIC METHODOLOGY**](#IMPLEMENTATION-AND-BASIC-METHODOLOGY)
 5. [**METHODOLOGY OF THE PROJECT**](#METHODOLOGY-OF-THE-PROJECT)
 6. [**LIBRARIES USED**](#LIBRARIES-USED)
-7. [**APPLICATIONS OF OUR PROJECT**](#Applications-of-Our-Project)
+
 
 ## PROBLEM STATEMENT AND ITS SOLUTION
-In a recent advance, the significance of text summarization accomplishes more attention due to data inundation on the web.  Hence, this information overwhelms yields in the 
-big requirement for more reliable and capable progressive text summarizers. Text Summarization gains its importance due to its various types of applications just like the summaries of books, digest- (summary of stories), the stock market, news, highlights- (meeting, event, sport), Abstract of scientific papers, newspaper articles, magazine etc. The main advantage of a text summarization is reading time of the user can be reduced.  
+
 This project covers the extensive methodologies fitted, issues launch, exploration and future directions in detection of Cancer.  
 
 ## INSTALLATION AND USAGE ON LOCAL SERVER
@@ -29,33 +28,56 @@ This project covers the extensive methodologies fitted, issues launch, explorati
 
 
 #### Breast Cancer Diagnosis
-![Alt Text](/Screenshots/1.PNG)
+![Alt Text](/Screenshots/2.PNG)
 
 
 #### Cervical Cancer Diagnosis
-![Alt Text](/Screenshots/1.PNG)
+![Alt Text](/Screenshots/3.PNG)
 
 
 #### Breast Cancer diagnosis through histopathology images
-![Alt Text](/Screenshots/1.PNG)
+![Alt Text](/Screenshots/4.PNG)
 
 
 #### Skin Cancer Prognosis
-![Alt Text](/Screenshots/1.PNG)
+![Alt Text](/Screenshots/5.PNG)
 
 
 ## IMPLEMENTATION AND BASIC METHODOLOGY
+This project covers the extensive methodologies fitted, issues launch, exploration and future directions in detection of Cancer.
 
+Novelty of the project lies in:
+To solve the problem by predicting whether the person has Cancer or not using machine learning and Deep Learning.
+
+#### Use or generation of New Dataset 
+The project is basically divided into detecting 3 types of Cancer: Skin Cancer, Cervical Cancer and Breast Cancer (by 2 methods) and also divided into prognosis and diagnosis of the respective disease. 
+Digitised images, Attributes such as: 1. Clump Thickness, 2. Uniformity of Cell Size, 3. Uniformity of Cell Shape, 4. Marginal Adhesion, 5. Single Epithelial Cell Size, 6. Bare Nuclei, 7. Bland Chromatin, 8. Normal Nucleoli, 9. Mitoses have been taken into account for detection of Breast Cancer.
+For diagnosis through histopathology images, convolutional neural network, was trained on patches of 50x50 RGB images, obtained through random crops on the larger 1500x1500 images.
+For Skin Cancer, The model was trained on the ISIC 2018 skin cancer(melanoma) dataset, the model uses lesion images and meta-data like gender and age to classify a lesion as malignant or benign.
+
+#### Development of new/hybrid Technology
+
+For Cervical cancer prognosis It predicts likelihood of developing cervical cancer based on lifestyle habits. Used 4 Linear Support vector machines to replicate results of 4 medical tests
+for cervical cancer tests namely the Hinselmann test, Schiller test, Cervical cytology, and Biopsy. Accuracies range from 85-90% on the test set for each model.
+For Breast Cancer, predicts if a patient(currently having a benign tumor) will develop breast cancer based on features computed features computed using a digitised image of a Fine needle aspirate(FNA) of breast mass.
+Also, for another way of diagnosis of Breast Cancer, The model used is a convolutional neural network, was trained on patches of 50x50 RGB images, obtained through random crops on the larger 1500x1500 images. The model scans the input high resolution histopathology image and predicts whether the patch contains a tumor.
+For Skin Cancer, The model was trained on the ISIC 2018 skin cancer (melanoma) dataset, the model uses lesion images and meta-data like gender and age to classify a lesion as malignant or benign.
+
+#### Transformation of problem 
+Both Unsupervised and Supervised Learning Techniques have been used to efficiently solve the problem of detecting cancer at early stages.
+
+#### Optimization of features
+Various feature extraction techniques were used for more accurate results.The mean errors were calculated between the actual times of distant disease occurrence and the times predicted using various prognostic features. Statistical analyses were also done. Majorly, CNN (Convolutional Neural Network) has been built to classify the diagnosis as Malignant or Benign outperforming human accuracy.
 
 
 ## METHODOLOGY OF THE PROJECT 
-![flowchart](https://github.com/infinity1013/TextSummarization/blob/main/static/flowchart.png)
+
 
 
 ### LIBRARIES USED
 
-#### NLTK 
-Natural Language Toolkit (NLTK) is a text processing library that is widely used in Natural Language Processing (NLP). It supports the high-performance functions of tokenization, parsing, classification, etc. The NLTK team initially released it in 2001 (Nltk.org, 2018). 
+#### NumPy 
+NumPy is a Python library used for working with arrays. It also has functions for working in domain of linear algebra, fourier transform, and matrices. 
 
 #### Scikit-learn 
 Scikit-learn is a machine learning library in Python. It performs easy-to-use dimensional reduction methods such as Principal Component Analysis (PCA), clustering methods such as k- 10 means, regression algorithms such as logistic regression, and classification algorithms such as random forests (Scikit-learn.org, 2018). 
