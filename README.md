@@ -23,6 +23,10 @@ This project covers the extensive methodologies fitted, issues launch, explorati
 
 ## Web Interface
 
+A video containing all the functionalities and details of the project.
+
+https://drive.google.com/file/d/1zyR3wrXFL7sZl6TxNgl5pb9QyiRm2BCk/view?usp=sharing
+
 #### Dashboard
 ![Alt Text](/Screenshots/1.PNG)
 
