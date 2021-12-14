@@ -75,7 +75,7 @@ Various feature extraction techniques were used for more accurate results.The me
 
 
 ## METHODOLOGY OF THE PROJECT 
-
+![Alt Text](/Screenshots/Flowchart.jpg)
 
 
 ### LIBRARIES USED
